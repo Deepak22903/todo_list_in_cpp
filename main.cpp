@@ -21,11 +21,9 @@ int main(int argc, char *argv[]) {
   } else if (string(argv[1]) == "show") {
     display_tasks();
   } else if (string(argv[1]) == "rm") {
-    if (string(argv[2]) == "-r") {
-      remove_all();
-    } else {
-      remove_task();
-    }
+    remove_task();
+  } else if (string(argv[1]) == "rm" && string(argv[2]) == "-r") {
+    remove_all();
   } else if (string(argv[1]) == "mark") {
     mark_done();
   }
