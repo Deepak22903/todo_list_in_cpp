@@ -1,4 +1,4 @@
-#### A simple todo list :smile:
+## A simple todo list :smile:
 
 ### Create a tasks.json with the following contents
 
