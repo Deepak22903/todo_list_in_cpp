@@ -3,7 +3,8 @@
 int sr;
 
 json in_from_json() {
-  ifstream inputFile("tasks.json");
+  ifstream inputFile(
+      "/home/deepak/ghq/github.com/Deepak22903/todo_list_in_cpp/tasks.json");
   if (!inputFile.is_open()) {
     std::cout << "Error opening the tasks.json file" << "\n";
     return 1;
@@ -15,7 +16,8 @@ json in_from_json() {
   return j;
 }
 void out_to_json(json j) {
-  ofstream outputFile("tasks.json");
+  ofstream outputFile(
+      "/home/deepak/ghq/github.com/Deepak22903/todo_list_in_cpp/tasks.json");
   if (!outputFile.is_open()) {
     cout << "Error opening the tasks.json file" << "\n";
     return;
