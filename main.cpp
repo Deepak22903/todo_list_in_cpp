@@ -16,15 +16,21 @@ int main(int argc, char *argv[]) {
             "   show      : list all the tasks\n"
             "   rm        : remove a task\n"
             "   rm -r     : remove all tasks\n";
+    return 0;
   } else if (string(argv[1]) == "add") {
     add_task(argc, argv);
+    return 0;
   } else if (string(argv[1]) == "show") {
     display_tasks();
-  } else if (string(argv[1]) == "rm") {
-    remove_task();
+    return 0;
   } else if (string(argv[1]) == "rm" && string(argv[2]) == "-r") {
     remove_all();
+    return 0;
+  } else if (string(argv[1]) == "rm") {
+    remove_task();
+    return 0;
   } else if (string(argv[1]) == "mark") {
     mark_done();
+    return 0;
   }
 }

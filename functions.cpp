@@ -58,6 +58,8 @@ void display_tasks() {
          << task.at("desc").get<string>() << "\n";
     sr++;
   }
+  if (sr == 1)
+    cout << "list empty!\n";
 }
 
 void remove_task() {
