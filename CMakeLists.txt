@@ -5,4 +5,4 @@ project(todo_list
         DESCRIPTION "A simpel todo list utility"
         LANGUAGES CXX)
 
-add_executable(todo main.cpp functions.cpp)
+add_subdirectory(src)

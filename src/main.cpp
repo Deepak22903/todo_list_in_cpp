@@ -1,5 +1,4 @@
-#include "header.h"
-#include <string>
+#include "../include/header.h"
 
 int main(int argc, char *argv[]) {
   if (argc < 2) {
