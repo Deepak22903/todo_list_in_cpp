@@ -14,6 +14,12 @@
 g++ main.cpp functions.cpp -o todo
 ```
 
+#### Cmake
+
+```bash
+mkdir build && cd build && cmake .. && cmake --build .
+```
+
 ### Usage
 
 ```bash
