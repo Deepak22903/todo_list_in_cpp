@@ -1,3 +1,4 @@
 tasks.json
 compile_commands.json
 out/
+.cache/
