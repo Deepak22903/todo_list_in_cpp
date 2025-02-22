@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
     return 1;
   } else if (string(argv[1]) == "-h") {
     cout << "Usage : todo option <input>\n"
-            "Your personal todo list uitility\n"
+            "Your personal todo list utility\n"
             "OPTIONS : \n"
             "   -h        : for help\n"
             "   add <task>: to add a new task\n"
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
   } else if (string(argv[1]) == "show") {
     display_tasks();
     return 0;
-  } else if (string(argv[1]) == "rm" && string(argv[2]) == "-r") {
+  } else if (string(argv[1]) == "rm" && argc > 2 && string(argv[2]) == "-r") {
     remove_all();
     return 0;
   } else if (string(argv[1]) == "rm") {
@@ -32,4 +32,8 @@ int main(int argc, char *argv[]) {
     mark_done();
     return 0;
   }
+
+  // Handle invalid option
+  cout << "Invalid option! Use 'todo -h' for help.\n";
+  return 1;
 }
